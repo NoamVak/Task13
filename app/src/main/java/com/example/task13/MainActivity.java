@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Sub initiate.
+     * Sub initiate. - series info
      *
      * <p>
      *
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Sub dif mult.
+     * Sub dif mult- series info
      *
      * <p>
      *
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Result.
+     * Result- first checks if everything have been submitted - sends current data to next act
      *
      * <p>
      *
