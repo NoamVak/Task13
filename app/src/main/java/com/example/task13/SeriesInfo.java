@@ -12,9 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-/**
- * The type Series info.
- */
+
 public class SeriesInfo extends AppCompatActivity  implements View.OnCreateContextMenuListener , AdapterView.OnItemClickListener{
     ListView series;
     TextView info;
@@ -50,7 +48,8 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
     }
 
     /**
-     * Fill array.
+     * Fill array. -fill ListView array with series elements
+     * <p>
      */
     public void FillArray(){
         if(choice==1){
@@ -68,7 +67,7 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
 
 
     /**
-     * CreateContextMenu
+     * CreateContextMenu- create and fill context menu
      *
      * <p>
      *
@@ -83,7 +82,7 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
     }
 
     /**
-     * OnContextItemSelected-  Context menu
+     * OnContextItemSelected-  shows series info when item selected
      *
      * <p>
      *
@@ -114,7 +113,7 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
     }
 
     /**
-     * OnItemClick- List View
+     * OnItemClick- List View - saves placement of item on the ListView
      *
      * <p>
      *
