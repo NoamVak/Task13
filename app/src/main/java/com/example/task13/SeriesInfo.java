@@ -12,6 +12,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * @author		Noam Vaknin <noamvak765@gmail.com>
+ * @version	1.6 (current version number of program) - I don't know exac what to do here
+ * @since		21/8/2016 (the date of the package the class was added)
+ *
+ */
 
 public class SeriesInfo extends AppCompatActivity  implements View.OnCreateContextMenuListener , AdapterView.OnItemClickListener{
     ListView series;
