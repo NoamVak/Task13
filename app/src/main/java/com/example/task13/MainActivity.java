@@ -9,10 +9,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+
 public class MainActivity extends AppCompatActivity {
     ToggleButton kind;
-    EditText first,dif_mult;
-    double a1,d_m;
+    EditText first,
+    dif_mult;
+    double a1, d_m;
     int choice;
     String con;
 
@@ -27,8 +29,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
+    /**
+     * Sub initiate.
+     *
+     * <p>
+     *
+     * @param view the view
+     */
     public void SubInitiate(View view) {
         con=first.getText().toString();
         if(con.equals("")){
@@ -39,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Sub dif mult.
+     *
+     * <p>
+     *
+     * @param view the view
+     */
     public void SubDifMult(View view) {
         con=dif_mult.getText().toString();
         if(con.equals("")){
@@ -49,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Result.
+     *
+     * <p>
+     *
+     * @param view the view
+     */
     public void Result(View view) {
         if(dif_mult.getText().toString().equals("")||first.getText().toString().equals("")){
             Toast.makeText(this,"nothing submitted",Toast.LENGTH_SHORT).show();
@@ -61,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(res);
         }
     }
+
+    /**
+     * Register.
+     *
+     * <p>
+     *
+     * @param view the view
+     */
     public void Register(View view) {
         if(kind.isChecked()){
             choice=1;

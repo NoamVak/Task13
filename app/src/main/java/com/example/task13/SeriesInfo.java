@@ -12,12 +12,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * The type Series info.
+ */
 public class SeriesInfo extends AppCompatActivity  implements View.OnCreateContextMenuListener , AdapterView.OnItemClickListener{
     ListView series;
     TextView info;
     Intent res;
-    int choice,row;
-    double a1,d_m;
+    int choice, row;
+    double a1, d_m;
     String [] seriesV=new String[20];
 
     @Override
@@ -46,6 +49,9 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
         series.setOnCreateContextMenuListener(this);
     }
 
+    /**
+     * Fill array.
+     */
     public void FillArray(){
         if(choice==1){
             for (int i=1;i<20;i++){
@@ -59,12 +65,31 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
         }
     }
 
+
+
+    /**
+     * CreateContextMenu
+     *
+     * <p>
+     *
+     * @param	menu , menuInfo, View v
+     */
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         menu.setHeaderTitle("Series Info");
         menu.add("n");
         menu.add("Sn");
     }
+
+    /**
+     * OnContextItemSelected-  Context menu
+     *
+     * <p>
+     *
+     * @param	item
+     * @return boolean value
+     */
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
@@ -87,6 +112,14 @@ public class SeriesInfo extends AppCompatActivity  implements View.OnCreateConte
         }
         return super.onContextItemSelected(item);
     }
+
+    /**
+     * OnItemClick- List View
+     *
+     * <p>
+     *
+     * @param	adapterView , view, Integer i, long l
+     */
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
